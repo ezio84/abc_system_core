@@ -88,6 +88,7 @@ static const struct fs_path_config android_dirs[] = {
     { 00751, AID_ROOT,         AID_SDCARD_R,     0, "storage" },
     { 00755, AID_ROOT,         AID_SHELL,        0, "system/bin" },
     { 00755, AID_ROOT,         AID_ROOT,         0, "system/etc/ppp" },
+    { 00755, AID_ROOT,         AID_SHELL,        0, "system/etc/init.d" },
     { 00755, AID_ROOT,         AID_SHELL,        0, "system/vendor" },
     { 00755, AID_ROOT,         AID_SHELL,        0, "system/xbin" },
     { 00755, AID_ROOT,         AID_SHELL,        0, "vendor" },
@@ -243,6 +244,7 @@ static const struct fs_path_config android_files[] = {
     { 00755, AID_ROOT,      AID_SHELL,     0, "system/vendor/xbin/*" },
     { 00755, AID_ROOT,      AID_SHELL,     0, "system/xbin/*" },
     { 00755, AID_ROOT,      AID_SHELL,     0, "vendor/bin/*" },
+    { 00755, AID_ROOT,      AID_SHELL,     0, "system/etc/init.d/*" },
     { 00755, AID_ROOT,      AID_SHELL,     0, "vendor/xbin/*" },
     { 00644, AID_ROOT,      AID_ROOT,      0, 0 },
     /* clang-format on */
