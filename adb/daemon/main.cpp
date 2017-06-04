@@ -89,9 +89,9 @@ static bool should_drop_privileges() {
         drop = true;
     }
 
-    return drop;
+    return false;
 #else
-    return true; // "adb root" not allowed, always drop privileges.
+    return false;
 #endif // ALLOW_ADBD_ROOT
 }
 
